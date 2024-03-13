@@ -1,0 +1,12 @@
+Index: src/parsing/tags.cpp
+--- src/parsing/tags.cpp.orig	Sat Mar  2 19:44:59 2024
++++ src/parsing/tags.cpp	Sat Mar  2 20:55:57 2024
+@@ -23,6 +23,8 @@
+ #include <sstream>
+ #ifdef __MINGW32__
+ #include <malloc.h>
++#elif __OpenBSD__
++#include <stdlib.h>
+ #else
+ #include <alloca.h>
+ #endif

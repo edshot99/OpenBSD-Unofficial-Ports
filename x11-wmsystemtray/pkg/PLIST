@@ -1,0 +1,2 @@
+@bin bin/wmsystemtray
+@man man/man1/wmsystemtray.1

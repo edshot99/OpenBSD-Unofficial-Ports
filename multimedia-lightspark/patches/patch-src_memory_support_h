@@ -1,0 +1,15 @@
+Index: src/memory_support.h
+--- src/memory_support.h.orig	Sat Mar  2 19:46:07 2024
++++ src/memory_support.h	Sat Mar  2 19:46:32 2024
+@@ -22,7 +22,11 @@
+ 
+ #include "compat.h"
+ #include "tiny_string.h"
++#ifdef __OpenBSD__
++#include <stdlib.h>
++#else
+ #include <malloc.h>
++#endif
+ 
+ namespace lightspark
+ {

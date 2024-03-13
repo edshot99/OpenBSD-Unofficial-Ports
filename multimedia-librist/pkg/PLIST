@@ -1,0 +1,22 @@
+@bin bin/ristsender
+@bin bin/ristreceiver
+@bin bin/rist2rist
+@bin bin/ristsrppasswd
+include/librist/
+include/librist/common.h
+include/librist/headers.h
+include/librist/librist_srp.h
+include/librist/librist.h
+include/librist/logging.h
+include/librist/oob.h
+include/librist/opt.h
+include/librist/peer.h
+include/librist/receiver.h
+include/librist/sender.h
+include/librist/stats.h
+include/librist/udpsocket.h
+include/librist/urlparam.h
+include/librist/version.h
+include/librist/librist_config.h
+lib/pkgconfig/librist.pc
+@lib lib/librist.so.${LIBrist_VERSION}

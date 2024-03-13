@@ -1,0 +1,7 @@
+@newgroup _opentracker:891
+@newuser _opentracker:891:891:default:opentracker daemon:/var/empty:/sbin/nologin
+@rcscript ${RCDIR}/opentracker
+@bin bin/opentracker
+share/examples/opentracker/
+share/examples/opentracker/opentracker.conf
+@sample ${SYSCONFDIR}/opentracker.conf

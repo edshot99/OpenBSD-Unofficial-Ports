@@ -1,0 +1,12 @@
+Index: src/backends/urlutils.cpp
+--- src/backends/urlutils.cpp.orig	Sat Mar  2 19:47:36 2024
++++ src/backends/urlutils.cpp	Sat Mar  2 20:55:34 2024
+@@ -32,6 +32,8 @@
+ #include <fstream>
+ #ifdef __MINGW32__
+ #include <malloc.h>
++#elif __OpenBSD__
++#include <stdlib.h>
+ #else
+ #include <alloca.h>
+ #endif

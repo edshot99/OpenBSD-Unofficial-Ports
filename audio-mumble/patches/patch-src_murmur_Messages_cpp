@@ -1,0 +1,22 @@
+Simple patch to hide all user's public IP address on a Mumble server.
+
+You can find the IP address and other information by right clicking a user
+and selecting information.
+Even if you enable the privacy setting in the Mumble client, it will still
+show your public IP address.
+
+You can find the original patch at:
+https://github.com/mumble-voip/mumble/pull/73
+
+Index: src/murmur/Messages.cpp
+--- src/murmur/Messages.cpp.orig	Sat Oct 16 14:37:04 2021
++++ src/murmur/Messages.cpp	Sat Oct 16 14:37:25 2021
+@@ -1757,7 +1757,7 @@ void Server::msgUserStats(ServerUser*uSource, MumblePr
+ 			msg.add_celt_versions(v);
+ 		msg.set_opus(pDstServerUser->bOpus);
+ 
+-		msg.set_address(pDstServerUser->haAddress.toStdString());
++		msg.set_address("127.0.0.1");
+ 	}
+ 
+ 	if (local)

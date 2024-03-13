@@ -1,0 +1,3 @@
+@static-lib lib/libkeychain.a
+include/keychain/
+include/keychain/keychain.h

@@ -1,0 +1,913 @@
+@static-lib lib/libtsduck.a
+lib/tsduck/
+@so lib/tsduck/tsplugin_aes.so
+@so lib/tsduck/tsplugin_analyze.so
+@so lib/tsduck/tsplugin_bat.so
+@so lib/tsduck/tsplugin_bitrate_monitor.so
+@so lib/tsduck/tsplugin_boostpid.so
+@so lib/tsduck/tsplugin_cat.so
+@so lib/tsduck/tsplugin_clear.so
+@so lib/tsduck/tsplugin_continuity.so
+@so lib/tsduck/tsplugin_count.so
+@so lib/tsduck/tsplugin_craft.so
+@so lib/tsduck/tsplugin_cutoff.so
+@so lib/tsduck/tsplugin_datainject.so
+@so lib/tsduck/tsplugin_decap.so
+@so lib/tsduck/tsplugin_descrambler.so
+@so lib/tsduck/tsplugin_dump.so
+@so lib/tsduck/tsplugin_duplicate.so
+@so lib/tsduck/tsplugin_dvb.so
+@so lib/tsduck/tsplugin_eit.so
+@so lib/tsduck/tsplugin_eitinject.so
+@so lib/tsduck/tsplugin_encap.so
+@so lib/tsduck/tsplugin_feed.so
+@so lib/tsduck/tsplugin_filter.so
+@so lib/tsduck/tsplugin_history.so
+@so lib/tsduck/tsplugin_inject.so
+@so lib/tsduck/tsplugin_limit.so
+@so lib/tsduck/tsplugin_merge.so
+@so lib/tsduck/tsplugin_mpe.so
+@so lib/tsduck/tsplugin_mpeinject.so
+@so lib/tsduck/tsplugin_mux.so
+@so lib/tsduck/tsplugin_nit.so
+@so lib/tsduck/tsplugin_nitscan.so
+@so lib/tsduck/tsplugin_pat.so
+@so lib/tsduck/tsplugin_pattern.so
+@so lib/tsduck/tsplugin_pcap.so
+@so lib/tsduck/tsplugin_pes.so
+@so lib/tsduck/tsplugin_pcradjust.so
+@so lib/tsduck/tsplugin_pcrbitrate.so
+@so lib/tsduck/tsplugin_pcrcopy.so
+@so lib/tsduck/tsplugin_pcredit.so
+@so lib/tsduck/tsplugin_pcrextract.so
+@so lib/tsduck/tsplugin_pcrverify.so
+@so lib/tsduck/tsplugin_pidshift.so
+@so lib/tsduck/tsplugin_play.so
+@so lib/tsduck/tsplugin_pmt.so
+@so lib/tsduck/tsplugin_psimerge.so
+@so lib/tsduck/tsplugin_reduce.so
+@so lib/tsduck/tsplugin_regulate.so
+@so lib/tsduck/tsplugin_remap.so
+@so lib/tsduck/tsplugin_rmorphan.so
+@so lib/tsduck/tsplugin_rmsplice.so
+@so lib/tsduck/tsplugin_scrambler.so
+@so lib/tsduck/tsplugin_sdt.so
+@so lib/tsduck/tsplugin_sections.so
+@so lib/tsduck/tsplugin_sifilter.so
+@so lib/tsduck/tsplugin_slice.so
+@so lib/tsduck/tsplugin_spliceinject.so
+@so lib/tsduck/tsplugin_splicemonitor.so
+@so lib/tsduck/tsplugin_stats.so
+@so lib/tsduck/tsplugin_stuffanalyze.so
+@so lib/tsduck/tsplugin_svremove.so
+@so lib/tsduck/tsplugin_svrename.so
+@so lib/tsduck/tsplugin_svresync.so
+@so lib/tsduck/tsplugin_t2mi.so
+@so lib/tsduck/tsplugin_time.so
+@so lib/tsduck/tsplugin_timeref.so
+@so lib/tsduck/tsplugin_timeshift.so
+@so lib/tsduck/tsplugin_trigger.so
+@so lib/tsduck/tsplugin_tsrename.so
+@so lib/tsduck/tsplugin_until.so
+@so lib/tsduck/tsplugin_zap.so
+@so lib/libtsduck.so
+include/tsduck/
+include/tsduck/tsUChar.h
+include/tsduck/tsVersion.h
+include/tsduck/tsAbstractOutputStream.h
+include/tsduck/tsAlgorithm.h
+include/tsduck/tsBoolPredicate.h
+include/tsduck/tsFunctors.h
+include/tsduck/tsMessagePriorityQueue.h
+include/tsduck/tsMessageQueue.h
+include/tsduck/tsRingNode.h
+include/tsduck/tsSingleDataStatistics.h
+include/tsduck/tsSingleton.h
+include/tsduck/tsUID.h
+include/tsduck/tsWatchDog.h
+include/tsduck/tsWatchDogHandlerInterface.h
+include/tsduck/tsArgs.h
+include/tsduck/tsCommandLine.h
+include/tsduck/tsCommandLineHandler.h
+include/tsduck/tsConfigFile.h
+include/tsduck/tsConfigSection.h
+include/tsduck/tsDuckConfigFile.h
+include/tsduck/tsEditLine.h
+include/tsduck/tsGitHubRelease.h
+include/tsduck/tsMain.h
+include/tsduck/tsNamesFile.h
+include/tsduck/tsObject.h
+include/tsduck/tsObjectRepository.h
+include/tsduck/tsVersionInfo.h
+include/tsduck/tsVersionString.h
+include/tsduck/tsAfterStandardHeaders.h
+include/tsduck/tsBeforeStandardHeaders.h
+include/tsduck/tsPlatform.h
+include/tsduck/tsPreConfiguration.h
+include/tsduck/tsjson.h
+include/tsduck/tsjsonArray.h
+include/tsduck/tsjsonFalse.h
+include/tsduck/tsjsonNull.h
+include/tsduck/tsjsonNumber.h
+include/tsduck/tsjsonObject.h
+include/tsduck/tsjsonOutputArgs.h
+include/tsduck/tsjsonRunningDocument.h
+include/tsduck/tsjsonString.h
+include/tsduck/tsjsonTrue.h
+include/tsduck/tsjsonValue.h
+include/tsduck/tsAbstractNetworkAddress.h
+include/tsduck/tsIP.h
+include/tsduck/tsIPProtocols.h
+include/tsduck/tsIPUtils.h
+include/tsduck/tsIPv4Address.h
+include/tsduck/tsIPv4AddressMask.h
+include/tsduck/tsIPv4Packet.h
+include/tsduck/tsIPv4SocketAddress.h
+include/tsduck/tsIPv6Address.h
+include/tsduck/tsIPv6SocketAddress.h
+include/tsduck/tsMACAddress.h
+include/tsduck/tsPcap.h
+include/tsduck/tsPcapFile.h
+include/tsduck/tsPcapFilter.h
+include/tsduck/tsPcapStream.h
+include/tsduck/tsRIST.h
+include/tsduck/tsSRTSocket.h
+include/tsduck/tsSocket.h
+include/tsduck/tsTCPConnection.h
+include/tsduck/tsTCPServer.h
+include/tsduck/tsTCPSocket.h
+include/tsduck/tsTelnetConnection.h
+include/tsduck/tsUDPReceiver.h
+include/tsduck/tsUDPSocket.h
+include/tsduck/tsURL.h
+include/tsduck/tsWebRequest.h
+include/tsduck/tsWebRequestArgs.h
+include/tsduck/tsAsyncReport.h
+include/tsduck/tsAsyncReportArgs.h
+include/tsduck/tsCerrReport.h
+include/tsduck/tsErrCodeReport.h
+include/tsduck/tsNullReport.h
+include/tsduck/tsReport.h
+include/tsduck/tsReportBuffer.h
+include/tsduck/tsReportFile.h
+include/tsduck/tsReportWithPrefix.h
+include/tsduck/tsSwitchableReport.h
+include/tsduck/tsAbortInterface.h
+include/tsduck/tsAbstractReadStreamInterface.h
+include/tsduck/tsAbstractWriteStreamInterface.h
+include/tsduck/tsApplicationSharedLibrary.h
+include/tsduck/tsCOM.h
+include/tsduck/tsConsoleState.h
+include/tsduck/tsEnvironment.h
+include/tsduck/tsFatal.h
+include/tsduck/tsFileNameGenerator.h
+include/tsduck/tsFileUtils.h
+include/tsduck/tsForkPipe.h
+include/tsduck/tsInputRedirector.h
+include/tsduck/tsInterruptHandler.h
+include/tsduck/tsMJD.h
+include/tsduck/tsMonotonic.h
+include/tsduck/tsOutputPager.h
+include/tsduck/tsOutputRedirector.h
+include/tsduck/tsPagerArgs.h
+include/tsduck/tsPollFiles.h
+include/tsduck/tsPollFilesListener.h
+include/tsduck/tsPolledFile.h
+include/tsduck/tsRegistry.h
+include/tsduck/tsResidentBuffer.h
+include/tsduck/tsSharedLibrary.h
+include/tsduck/tsSysInfo.h
+include/tsduck/tsSysUtils.h
+include/tsduck/tsSystemMonitor.h
+include/tsduck/tsThread.h
+include/tsduck/tsThreadAttributes.h
+include/tsduck/tsTime.h
+include/tsduck/tsUserInterrupt.h
+include/tsduck/tsGrid.h
+include/tsduck/tsTLVSyntax.h
+include/tsduck/tsTextFormatter.h
+include/tsduck/tsTextParser.h
+include/tsduck/tsAbstractNumber.h
+include/tsduck/tsArgMix.h
+include/tsduck/tsBCD.h
+include/tsduck/tsBitRate.h
+include/tsduck/tsBuffer.h
+include/tsduck/tsByteBlock.h
+include/tsduck/tsByteSwap.h
+include/tsduck/tsCompactBitSet.h
+include/tsduck/tsDisplayInterface.h
+include/tsduck/tsEnumUtils.h
+include/tsduck/tsEnumeration.h
+include/tsduck/tsException.h
+include/tsduck/tsFixedPoint.h
+include/tsduck/tsFloatUtils.h
+include/tsduck/tsFloatingPoint.h
+include/tsduck/tsFraction.h
+include/tsduck/tsInteger.h
+include/tsduck/tsIntegerUtils.h
+include/tsduck/tsMemory.h
+include/tsduck/tsReplacement.h
+include/tsduck/tsRotate.h
+include/tsduck/tsSafePtr.h
+include/tsduck/tsStringifyInterface.h
+include/tsduck/tsUString.h
+include/tsduck/tsSysCtl.h
+include/tsduck/tsxml.h
+include/tsduck/tsxmlAttribute.h
+include/tsduck/tsxmlComment.h
+include/tsduck/tsxmlDeclaration.h
+include/tsduck/tsxmlDocument.h
+include/tsduck/tsxmlElement.h
+include/tsduck/tsxmlJSONConverter.h
+include/tsduck/tsxmlModelDocument.h
+include/tsduck/tsxmlNode.h
+include/tsduck/tsxmlPatchDocument.h
+include/tsduck/tsxmlRunningDocument.h
+include/tsduck/tsxmlText.h
+include/tsduck/tsxmlTweaks.h
+include/tsduck/tsxmlUnknown.h
+include/tsduck/tsAES.h
+include/tsduck/tsBetterSystemRandomGenerator.h
+include/tsduck/tsBlockCipher.h
+include/tsduck/tsBlockCipherAlertInterface.h
+include/tsduck/tsCBC.h
+include/tsduck/tsCRC32.h
+include/tsduck/tsCTR.h
+include/tsduck/tsCTS1.h
+include/tsduck/tsCTS2.h
+include/tsduck/tsCTS3.h
+include/tsduck/tsCTS4.h
+include/tsduck/tsCipherChaining.h
+include/tsduck/tsDES.h
+include/tsduck/tsDVBCISSA.h
+include/tsduck/tsDVBCSA2.h
+include/tsduck/tsDVS042.h
+include/tsduck/tsECB.h
+include/tsduck/tsHash.h
+include/tsduck/tsIDSA.h
+include/tsduck/tsRandomGenerator.h
+include/tsduck/tsSCTE52.h
+include/tsduck/tsSHA1.h
+include/tsduck/tsSHA256.h
+include/tsduck/tsSHA512.h
+include/tsduck/tsSystemRandomGenerator.h
+include/tsduck/tsTDES.h
+include/tsduck/tsDektecControl.h
+include/tsduck/tsDektecDeviceInfo.h
+include/tsduck/tsDektecInputPlugin.h
+include/tsduck/tsDektecOutputPlugin.h
+include/tsduck/tsDektecUtils.h
+include/tsduck/tsContinuityAnalyzer.h
+include/tsduck/tsTSAnalyzer.h
+include/tsduck/tsTSAnalyzerOptions.h
+include/tsduck/tsTSAnalyzerReport.h
+include/tsduck/tsBitrateDifferenceDVBT.h
+include/tsduck/tsChannelFile.h
+include/tsduck/tsDeliverySystem.h
+include/tsduck/tsHFBand.h
+include/tsduck/tsLNB.h
+include/tsduck/tsLegacyBandWidth.h
+include/tsduck/tsModulation.h
+include/tsduck/tsModulationArgs.h
+include/tsduck/tsSignalState.h
+include/tsduck/tsAVC.h
+include/tsduck/tsTSScanner.h
+include/tsduck/tsTuner.h
+include/tsduck/tsTunerArgs.h
+include/tsduck/tsTunerBase.h
+include/tsduck/tsTunerEmulator.h
+include/tsduck/tsTunerDevice.h
+include/tsduck/tsCASDate.h
+include/tsduck/tsCASFamily.h
+include/tsduck/tsCASMapper.h
+include/tsduck/tsCASSelectionArgs.h
+include/tsduck/tsKeyTable.h
+include/tsduck/tsPCSC.h
+include/tsduck/tsPIDOperator.h
+include/tsduck/tsTSScrambling.h
+include/tsduck/tsARIBCharset.h
+include/tsduck/tsCharset.h
+include/tsduck/tsDVBCharTable.h
+include/tsduck/tsDVBCharTableSingleByte.h
+include/tsduck/tsDVBCharTableUTF16.h
+include/tsduck/tsDVBCharTableUTF8.h
+include/tsduck/tsDVBCharset.h
+include/tsduck/tsDumpCharset.h
+include/tsduck/tsAC3Attributes.h
+include/tsduck/tsAVCAccessUnitDelimiter.h
+include/tsduck/tsAVCAttributes.h
+include/tsduck/tsAVCHRDParameters.h
+include/tsduck/tsAVCParser.h
+include/tsduck/tsAVCSequenceParameterSet.h
+include/tsduck/tsAVCVUIParameters.h
+include/tsduck/tsAbstractAVCAccessUnit.h
+include/tsduck/tsAbstractAudioVideoAttributes.h
+include/tsduck/tsAbstractHEVCAccessUnit.h
+include/tsduck/tsAbstractVVCAccessUnit.h
+include/tsduck/tsAbstractVideoAccessUnit.h
+include/tsduck/tsAbstractVideoData.h
+include/tsduck/tsCodecType.h
+include/tsduck/tsAbstractVideoStructure.h
+include/tsduck/tsAccessUnitIterator.h
+include/tsduck/tsHEVC.h
+include/tsduck/tsHEVCAccessUnitDelimiter.h
+include/tsduck/tsHEVCAttributes.h
+include/tsduck/tsHEVCHRDParameters.h
+include/tsduck/tsHEVCProfileTierLevel.h
+include/tsduck/tsHEVCScalingListData.h
+include/tsduck/tsHEVCSequenceParameterSet.h
+include/tsduck/tsHEVCShortTermReferencePictureSetList.h
+include/tsduck/tsHEVCVUIParameters.h
+include/tsduck/tsMPEG2.h
+include/tsduck/tsMPEG2AudioAttributes.h
+include/tsduck/tsMPEG2VideoAttributes.h
+include/tsduck/tsVVC.h
+include/tsduck/tsAbstractDemux.h
+include/tsduck/tsVVCAccessUnitDelimiter.h
+include/tsduck/tsAbstractPacketizer.h
+include/tsduck/tsCyclingPacketizer.h
+include/tsduck/tsDemuxedData.h
+include/tsduck/tsFileNameRate.h
+include/tsduck/tsFileNameRateList.h
+include/tsduck/tsInvalidSectionHandlerInterface.h
+include/tsduck/tsOneShotPacketizer.h
+include/tsduck/tsPacketizer.h
+include/tsduck/tsSectionDemux.h
+include/tsduck/tsSectionHandlerInterface.h
+include/tsduck/tsSectionProviderInterface.h
+include/tsduck/tsSignalizationDemux.h
+include/tsduck/tsSignalizationHandlerInterface.h
+include/tsduck/tsStandaloneTableDemux.h
+include/tsduck/tsTableHandlerInterface.h
+include/tsduck/tsTimeTrackerDemux.h
+include/tsduck/tsAbstractDescriptor.h
+include/tsduck/tsAV1VideoDescriptor.h
+include/tsduck/tsATSCAC3AudioStreamDescriptor.h
+include/tsduck/tsATSCEAC3AudioDescriptor.h
+include/tsduck/tsATSCStuffingDescriptor.h
+include/tsduck/tsATSCTimeShiftedServiceDescriptor.h
+include/tsduck/tsCaptionServiceDescriptor.h
+include/tsduck/tsComponentNameDescriptor.h
+include/tsduck/tsContentAdvisoryDescriptor.h
+include/tsduck/tsDCCArrivingRequestDescriptor.h
+include/tsduck/tsDCCDepartingRequestDescriptor.h
+include/tsduck/tsExtendedChannelNameDescriptor.h
+include/tsduck/tsGenreDescriptor.h
+include/tsduck/tsRedistributionControlDescriptor.h
+include/tsduck/tsServiceLocationDescriptor.h
+include/tsduck/tsAustraliaLogicalChannelDescriptor.h
+include/tsduck/tsAVS3VideoDescriptor.h
+include/tsduck/tsDTGGuidanceDescriptor.h
+include/tsduck/tsDTGHDSimulcastLogicalChannelDescriptor.h
+include/tsduck/tsDTGLogicalChannelDescriptor.h
+include/tsduck/tsDTGPreferredNameIdentifierDescriptor.h
+include/tsduck/tsDTGPreferredNameListDescriptor.h
+include/tsduck/tsDTGServiceAttributeDescriptor.h
+include/tsduck/tsDTGShortServiceNameDescriptor.h
+include/tsduck/tsAACDescriptor.h
+include/tsduck/tsAbstractDeliverySystemDescriptor.h
+include/tsduck/tsAbstractLogicalChannelDescriptor.h
+include/tsduck/tsAbstractMultilingualDescriptor.h
+include/tsduck/tsAbstractPreferredNameIdentifierDescriptor.h
+include/tsduck/tsAbstractPreferredNameListDescriptor.h
+include/tsduck/tsAdaptationFieldDataDescriptor.h
+include/tsduck/tsAncillaryDataDescriptor.h
+include/tsduck/tsAnnouncementSupportDescriptor.h
+include/tsduck/tsApplicationDescriptor.h
+include/tsduck/tsBouquetNameDescriptor.h
+include/tsduck/tsApplicationIconsDescriptor.h
+include/tsduck/tsApplicationNameDescriptor.h
+include/tsduck/tsApplicationRecordingDescriptor.h
+include/tsduck/tsApplicationSignallingDescriptor.h
+include/tsduck/tsApplicationStorageDescriptor.h
+include/tsduck/tsApplicationUsageDescriptor.h
+include/tsduck/tsAudioPreselectionDescriptor.h
+include/tsduck/tsC2BundleDeliverySystemDescriptor.h
+include/tsduck/tsC2DeliverySystemDescriptor.h
+include/tsduck/tsCAIdentifierDescriptor.h
+include/tsduck/tsCIAncillaryDataDescriptor.h
+include/tsduck/tsCPCMDeliverySignallingDescriptor.h
+include/tsduck/tsCPDescriptor.h
+include/tsduck/tsCPIdentifierDescriptor.h
+include/tsduck/tsCableDeliverySystemDescriptor.h
+include/tsduck/tsCellFrequencyLinkDescriptor.h
+include/tsduck/tsCellListDescriptor.h
+include/tsduck/tsComponentDescriptor.h
+include/tsduck/tsContentDescriptor.h
+include/tsduck/tsContentIdentifierDescriptor.h
+include/tsduck/tsCountryAvailabilityDescriptor.h
+include/tsduck/tsDIILocationDescriptor.h
+include/tsduck/tsDSNGDescriptor.h
+include/tsduck/tsDTSDescriptor.h
+include/tsduck/tsDTSHDDescriptor.h
+include/tsduck/tsDTSNeuralDescriptor.h
+include/tsduck/tsDVBAC3Descriptor.h
+include/tsduck/tsDVBAC4Descriptor.h
+include/tsduck/tsDVBDTSUHDDescriptor.h
+include/tsduck/tsDVBEnhancedAC3Descriptor.h
+include/tsduck/tsDVBHTMLApplicationBoundaryDescriptor.h
+include/tsduck/tsDVBHTMLApplicationDescriptor.h
+include/tsduck/tsDVBHTMLApplicationLocationDescriptor.h
+include/tsduck/tsDVBJApplicationDescriptor.h
+include/tsduck/tsDVBJApplicationLocationDescriptor.h
+include/tsduck/tsDVBServiceProminenceDescriptor.h
+include/tsduck/tsDVBStuffingDescriptor.h
+include/tsduck/tsDVBTimeShiftedServiceDescriptor.h
+include/tsduck/tsDataBroadcastDescriptor.h
+include/tsduck/tsDataBroadcastIdDescriptor.h
+include/tsduck/tsDefaultAuthorityDescriptor.h
+include/tsduck/tsECMRepetitionRateDescriptor.h
+include/tsduck/tsExtendedEventDescriptor.h
+include/tsduck/tsExternalApplicationAuthorizationDescriptor.h
+include/tsduck/tsFTAContentManagementDescriptor.h
+include/tsduck/tsFrequencyListDescriptor.h
+include/tsduck/tsGraphicsConstraintsDescriptor.h
+include/tsduck/tsIPMACGenericStreamLocationDescriptor.h
+include/tsduck/tsIPMACPlatformNameDescriptor.h
+include/tsduck/tsIPMACPlatformProviderNameDescriptor.h
+include/tsduck/tsIPSignallingDescriptor.h
+include/tsduck/tsIPMACStreamLocationDescriptor.h
+include/tsduck/tsISPAccessModeDescriptor.h
+include/tsduck/tsImageIconDescriptor.h
+include/tsduck/tsLinkageDescriptor.h
+include/tsduck/tsLocalTimeOffsetDescriptor.h
+include/tsduck/tsMessageDescriptor.h
+include/tsduck/tsMosaicDescriptor.h
+include/tsduck/tsMultilingualBouquetNameDescriptor.h
+include/tsduck/tsMultilingualComponentDescriptor.h
+include/tsduck/tsMultilingualNetworkNameDescriptor.h
+include/tsduck/tsMultilingualServiceNameDescriptor.h
+include/tsduck/tsNVODReferenceDescriptor.h
+include/tsduck/tsNetworkNameDescriptor.h
+include/tsduck/tsNetworkChangeNotifyDescriptor.h
+include/tsduck/tsPDCDescriptor.h
+include/tsduck/tsParentalRatingDescriptor.h
+include/tsduck/tsPartialTransportStreamDescriptor.h
+include/tsduck/tsPrefetchDescriptor.h
+include/tsduck/tsPrivateDataSpecifierDescriptor.h
+include/tsduck/tsProtectionMessageDescriptor.h
+include/tsduck/tsRARoverDVBstreamDescriptor.h
+include/tsduck/tsRARoverIPDescriptor.h
+include/tsduck/tsRNTScanDescriptor.h
+include/tsduck/tsRelatedContentDescriptor.h
+include/tsduck/tsS2SatelliteDeliverySystemDescriptor.h
+include/tsduck/tsSHDeliverySystemDescriptor.h
+include/tsduck/tsS2XSatelliteDeliverySystemDescriptor.h
+include/tsduck/tsS2Xv2SatelliteDeliverySystemDescriptor.h
+include/tsduck/tsSSUDataBroadcastIdDescriptor.h
+include/tsduck/tsSSUEnhancedMessageDescriptor.h
+include/tsduck/tsSSUEventNameDescriptor.h
+include/tsduck/tsSSULinkageDescriptor.h
+include/tsduck/tsSSULocationDescriptor.h
+include/tsduck/tsSSUMessageDescriptor.h
+include/tsduck/tsSSUSubgroupAssociationDescriptor.h
+include/tsduck/tsSSUURIDescriptor.h
+include/tsduck/tsSatelliteDeliverySystemDescriptor.h
+include/tsduck/tsSchedulingDescriptor.h
+include/tsduck/tsScramblingDescriptor.h
+include/tsduck/tsServiceAvailabilityDescriptor.h
+include/tsduck/tsServiceDescriptor.h
+include/tsduck/tsServiceIdentifierDescriptor.h
+include/tsduck/tsServiceListDescriptor.h
+include/tsduck/tsServiceMoveDescriptor.h
+include/tsduck/tsServiceRelocatedDescriptor.h
+include/tsduck/tsShortEventDescriptor.h
+include/tsduck/tsShortSmoothingBufferDescriptor.h
+include/tsduck/tsSimpleApplicationBoundaryDescriptor.h
+include/tsduck/tsSimpleApplicationLocationDescriptor.h
+include/tsduck/tsStreamIdentifierDescriptor.h
+include/tsduck/tsT2MIDescriptor.h
+include/tsduck/tsSubtitlingDescriptor.h
+include/tsduck/tsSupplementaryAudioDescriptor.h
+include/tsduck/tsT2DeliverySystemDescriptor.h
+include/tsduck/tsTTMLSubtitlingDescriptor.h
+include/tsduck/tsTVAIdDescriptor.h
+include/tsduck/tsTargetIPAddressDescriptor.h
+include/tsduck/tsTargetIPSlashDescriptor.h
+include/tsduck/tsTargetIPSourceSlashDescriptor.h
+include/tsduck/tsTargetIPv6AddressDescriptor.h
+include/tsduck/tsTargetIPv6SlashDescriptor.h
+include/tsduck/tsTargetIPv6SourceSlashDescriptor.h
+include/tsduck/tsTargetMACAddressDescriptor.h
+include/tsduck/tsTargetRegionDescriptor.h
+include/tsduck/tsTargetMACAddressRangeDescriptor.h
+include/tsduck/tsTargetRegionNameDescriptor.h
+include/tsduck/tsTargetSerialNumberDescriptor.h
+include/tsduck/tsTargetSmartcardDescriptor.h
+include/tsduck/tsTelephoneDescriptor.h
+include/tsduck/tsTeletextDescriptor.h
+include/tsduck/tsTerrestrialDeliverySystemDescriptor.h
+include/tsduck/tsTimeShiftedEventDescriptor.h
+include/tsduck/tsTimeSliceFECIdentifierDescriptor.h
+include/tsduck/tsTransportProtocolDescriptor.h
+include/tsduck/tsTransportStreamDescriptor.h
+include/tsduck/tsURILinkageDescriptor.h
+include/tsduck/tsCADescriptor.h
+include/tsduck/tsUpdateDescriptor.h
+include/tsduck/tsVBIDataDescriptor.h
+include/tsduck/tsVBITeletextDescriptor.h
+include/tsduck/tsVVCSubpicturesDescriptor.h
+include/tsduck/tsVideoDepthRangeDescriptor.h
+include/tsduck/tsEacemHDSimulcastLogicalChannelDescriptor.h
+include/tsduck/tsEacemLogicalChannelNumberDescriptor.h
+include/tsduck/tsEacemPreferredNameIdentifierDescriptor.h
+include/tsduck/tsEacemPreferredNameListDescriptor.h
+include/tsduck/tsEacemStreamIdentifierDescriptor.h
+include/tsduck/tsEutelsatChannelNumberDescriptor.h
+include/tsduck/tsAudioComponentDescriptor.h
+include/tsduck/tsAreaBroadcastingInformationDescriptor.h
+include/tsduck/tsBasicLocalEventDescriptor.h
+include/tsduck/tsBoardInformationDescriptor.h
+include/tsduck/tsBroadcasterNameDescriptor.h
+include/tsduck/tsCAContractInfoDescriptor.h
+include/tsduck/tsCAEMMTSDescriptor.h
+include/tsduck/tsCAServiceDescriptor.h
+include/tsduck/tsConditionalPlaybackDescriptor.h
+include/tsduck/tsContentAvailabilityDescriptor.h
+include/tsduck/tsDataComponentDescriptor.h
+include/tsduck/tsDataContentDescriptor.h
+include/tsduck/tsDigitalCopyControlDescriptor.h
+include/tsduck/tsReferenceDescriptor.h
+include/tsduck/tsEmergencyInformationDescriptor.h
+include/tsduck/tsEventGroupDescriptor.h
+include/tsduck/tsExtendedBroadcasterDescriptor.h
+include/tsduck/tsHierarchicalTransmissionDescriptor.h
+include/tsduck/tsHybridInformationDescriptor.h
+include/tsduck/tsISDBAccessControlDescriptor.h
+include/tsduck/tsISDBComponentGroupDescriptor.h
+include/tsduck/tsISDBConnectedTransmissionDescriptor.h
+include/tsduck/tsISDBHyperlinkDescriptor.h
+include/tsduck/tsISDBLDTLinkageDescriptor.h
+include/tsduck/tsISDBNetworkIdentifierDescriptor.h
+include/tsduck/tsISDBTargetRegionDescriptor.h
+include/tsduck/tsISDBTerrestrialDeliverySystemDescriptor.h
+include/tsduck/tsLogoTransmissionDescriptor.h
+include/tsduck/tsNodeRelationDescriptor.h
+include/tsduck/tsPartialReceptionDescriptor.h
+include/tsduck/tsSIParameterDescriptor.h
+include/tsduck/tsSIPrimeTSDescriptor.h
+include/tsduck/tsSTCReferenceDescriptor.h
+include/tsduck/tsSeriesDescriptor.h
+include/tsduck/tsServiceGroupDescriptor.h
+include/tsduck/tsShortNodeInformationDescriptor.h
+include/tsduck/tsSystemManagementDescriptor.h
+include/tsduck/tsTSInformationDescriptor.h
+include/tsduck/tsVideoDecodeControlDescriptor.h
+include/tsduck/tsAFExtensionsDescriptor.h
+include/tsduck/tsAVCTimingAndHRDDescriptor.h
+include/tsduck/tsAVCVideoDescriptor.h
+include/tsduck/tsAssociationTagDescriptor.h
+include/tsduck/tsAudioStreamDescriptor.h
+include/tsduck/tsCarouselIdentifierDescriptor.h
+include/tsduck/tsContentLabellingDescriptor.h
+include/tsduck/tsCopyrightDescriptor.h
+include/tsduck/tsDataStreamAlignmentDescriptor.h
+include/tsduck/tsDeferredAssociationTagsDescriptor.h
+include/tsduck/tsEVCTimingAndHRDDescriptor.h
+include/tsduck/tsEVCVideoDescriptor.h
+include/tsduck/tsExternalESIdDescriptor.h
+include/tsduck/tsFMCDescriptor.h
+include/tsduck/tsGreenExtensionDescriptor.h
+include/tsduck/tsHEVCHierarchyExtensionDescriptor.h
+include/tsduck/tsHEVCOperationPointDescriptor.h
+include/tsduck/tsHEVCSubregionDescriptor.h
+include/tsduck/tsHEVCTileSubstreamDescriptor.h
+include/tsduck/tsHEVCTimingAndHRDDescriptor.h
+include/tsduck/tsHEVCVideoDescriptor.h
+include/tsduck/tsHierarchyDescriptor.h
+include/tsduck/tsIBPDescriptor.h
+include/tsduck/tsISO639LanguageDescriptor.h
+include/tsduck/tsJ2KVideoDescriptor.h
+include/tsduck/tsJPEGXSVideoDescriptor.h
+include/tsduck/tsLCEVCLinkageDescriptor.h
+include/tsduck/tsLCEVCVideoDescriptor.h
+include/tsduck/tsM4MuxBufferSizeDescriptor.h
+include/tsduck/tsM4MuxTimingDescriptor.h
+include/tsduck/tsMPEG2AACAudioDescriptor.h
+include/tsduck/tsMPEG2StereoscopicVideoFormatDescriptor.h
+include/tsduck/tsMPEG4AudioDescriptor.h
+include/tsduck/tsMPEG4TextDescriptor.h
+include/tsduck/tsMPEG4VideoDescriptor.h
+include/tsduck/tsMPEGH3DAudioDescriptor.h
+include/tsduck/tsMPEGH3DAudioMultiStreamDescriptor.h
+include/tsduck/tsMPEGH3DAudioSceneDescriptor.h
+include/tsduck/tsMPEGH3DAudioTextLabelDescriptor.h
+include/tsduck/tsMVCExtensionDescriptor.h
+include/tsduck/tsMVCOperationPointDescriptor.h
+include/tsduck/tsMasteringDisplayMetadata.h
+include/tsduck/tsMaximumBitrateDescriptor.h
+include/tsduck/tsMediaServiceKindDescriptor.h
+include/tsduck/tsMetadataDescriptor.h
+include/tsduck/tsMetadataPointerDescriptor.h
+include/tsduck/tsMetadataSTDDescriptor.h
+include/tsduck/tsMultiplexBufferDescriptor.h
+include/tsduck/tsMultiplexBufferUtilizationDescriptor.h
+include/tsduck/tsMuxcodeDescriptor.h
+include/tsduck/tsNPTEndpointDescriptor.h
+include/tsduck/tsNPTReferenceDescriptor.h
+include/tsduck/tsPrivateDataIndicatorDescriptor.h
+include/tsduck/tsQualityExtensionDescriptor.h
+include/tsduck/tsRegistrationDescriptor.h
+include/tsduck/tsSLDescriptor.h
+include/tsduck/tsSTDDescriptor.h
+include/tsduck/tsSVCExtensionDescriptor.h
+include/tsduck/tsSmoothingBufferDescriptor.h
+include/tsduck/tsStereoscopicProgramInfoDescriptor.h
+include/tsduck/tsStereoscopicVideoInfoDescriptor.h
+include/tsduck/tsStreamEventDescriptor.h
+include/tsduck/tsStreamModeDescriptor.h
+include/tsduck/tsSystemClockDescriptor.h
+include/tsduck/tsTargetBackgroundGridDescriptor.h
+include/tsduck/tsTransportProfileDescriptor.h
+include/tsduck/tsECMGSCS.h
+include/tsduck/tsVVCTimingAndHRDDescriptor.h
+include/tsduck/tsVVCVideoDescriptor.h
+include/tsduck/tsVideoStreamDescriptor.h
+include/tsduck/tsVideoWindowDescriptor.h
+include/tsduck/tsVirtualSegmentationDescriptor.h
+include/tsduck/tsNorDigLogicalChannelDescriptorV1.h
+include/tsduck/tsNorDigLogicalChannelDescriptorV2.h
+include/tsduck/tsCueIdentifierDescriptor.h
+include/tsduck/tsEASAudioFileDescriptor.h
+include/tsduck/tsEASInbandDetailsChannelDescriptor.h
+include/tsduck/tsEASInbandExceptionChannelsDescriptor.h
+include/tsduck/tsEASMetadataDescriptor.h
+include/tsduck/tsEMMGMUX.h
+include/tsduck/tsSpliceAvailDescriptor.h
+include/tsduck/tsSpliceDTMFDescriptor.h
+include/tsduck/tsSpliceSegmentationDescriptor.h
+include/tsduck/tsSpliceTimeDescriptor.h
+include/tsduck/tsSkyLogicalChannelNumberDescriptor.h
+include/tsduck/tsDuckProtocol.h
+include/tsduck/tsECMGClient.h
+include/tsduck/tsECMGClientArgs.h
+include/tsduck/tsECMGClientHandlerInterface.h
+include/tsduck/tsEMMGClient.h
+include/tsduck/tsSimulCryptDate.h
+include/tsduck/tstlv.h
+include/tsduck/tstlvAnalyzer.h
+include/tsduck/tstlvChannelMessage.h
+include/tsduck/tstlvConnection.h
+include/tsduck/tstlvLogger.h
+include/tsduck/tshls.h
+include/tsduck/tstlvMessage.h
+include/tsduck/tstlvMessageFactory.h
+include/tsduck/tstlvProtocol.h
+include/tsduck/tstlvSerializer.h
+include/tsduck/tstlvStreamMessage.h
+include/tsduck/tsPacketDecapsulation.h
+include/tsduck/tsPacketEncapsulation.h
+include/tsduck/tsEITGenerator.h
+include/tsduck/tsEITOptions.h
+include/tsduck/tsEITProcessor.h
+include/tsduck/tsEITRepetitionProfile.h
+include/tsduck/tshlsAltPlayList.h
+include/tsduck/tshlsMediaElement.h
+include/tsduck/tshlsMediaPlayList.h
+include/tsduck/tshlsMediaSegment.h
+include/tsduck/tshlsPlayList.h
+include/tsduck/tshlsTagAttributes.h
+include/tsduck/tsPES.h
+include/tsduck/tsMPEDemux.h
+include/tsduck/tsMPEHandlerInterface.h
+include/tsduck/tsMPEPacket.h
+include/tsduck/tsPESDemux.h
+include/tsduck/tsPESHandlerInterface.h
+include/tsduck/tsPESOneShotPacketizer.h
+include/tsduck/tsPESPacket.h
+include/tsduck/tsPESPacketizer.h
+include/tsduck/tsPESProviderInterface.h
+include/tsduck/tsPESStreamPacketizer.h
+include/tsduck/tsATSCMultipleString.h
+include/tsduck/tsAbstractDefinedByStandards.h
+include/tsduck/tsAbstractSignalization.h
+include/tsduck/tsApplicationIdentifier.h
+include/tsduck/tsAudioLanguageOptions.h
+include/tsduck/tsBinaryTable.h
+include/tsduck/tsPSI.h
+include/tsduck/tsDescriptor.h
+include/tsduck/tsDescriptorList.h
+include/tsduck/tsEDID.h
+include/tsduck/tsETID.h
+include/tsduck/tsLogicalChannelNumbers.h
+include/tsduck/tsPSIBuffer.h
+include/tsduck/tsPSILogger.h
+include/tsduck/tsPSIMerger.h
+include/tsduck/tsPSIRepository.h
+include/tsduck/tsSCTE35.h
+include/tsduck/tsSection.h
+include/tsduck/tsSectionFile.h
+include/tsduck/tsSectionFileArgs.h
+include/tsduck/tsService.h
+include/tsduck/tsServiceDiscovery.h
+include/tsduck/tsServiceIdTriplet.h
+include/tsduck/tsSpliceInsert.h
+include/tsduck/tsSpliceSchedule.h
+include/tsduck/tsTablePatchXML.h
+include/tsduck/tsTablesPtr.h
+include/tsduck/tsTablesDisplay.h
+include/tsduck/tsTablesLogger.h
+include/tsduck/tsTablesLoggerFilter.h
+include/tsduck/tsTablesLoggerFilterInterface.h
+include/tsduck/tsTablesLoggerFilterRepository.h
+include/tsduck/tsTransportStreamId.h
+include/tsduck/tsDuckContext.h
+include/tsduck/tsNames.h
+include/tsduck/tsOUI.h
+include/tsduck/tsStandards.h
+include/tsduck/tsT2MI.h
+include/tsduck/tsT2MIDemux.h
+include/tsduck/tsT2MIHandlerInterface.h
+include/tsduck/tsT2MIPacket.h
+include/tsduck/tsAbstractDescriptorsTable.h
+include/tsduck/tsAbstractLongTable.h
+include/tsduck/tsAbstractTable.h
+include/tsduck/tsATSCEIT.h
+include/tsduck/tsAbstractTransportListTable.h
+include/tsduck/tsCVCT.h
+include/tsduck/tsDCCSCT.h
+include/tsduck/tsDCCT.h
+include/tsduck/tsETT.h
+include/tsduck/tsMGT.h
+include/tsduck/tsRRT.h
+include/tsduck/tsSTT.h
+include/tsduck/tsTVCT.h
+include/tsduck/tsVCT.h
+include/tsduck/tsAIT.h
+include/tsduck/tsBAT.h
+include/tsduck/tsCIT.h
+include/tsduck/tsDiscontinuityInformationTable.h
+include/tsduck/tsEIT.h
+include/tsduck/tsINT.h
+include/tsduck/tsNIT.h
+include/tsduck/tsRNT.h
+include/tsduck/tsRST.h
+include/tsduck/tsSAT.h
+include/tsduck/tsSDT.h
+include/tsduck/tsSelectionInformationTable.h
+include/tsduck/tsTDT.h
+include/tsduck/tsTOT.h
+include/tsduck/tsUNT.h
+include/tsduck/tsBIT.h
+include/tsduck/tsCDT.h
+include/tsduck/tsERT.h
+include/tsduck/tsITT.h
+include/tsduck/tsLDT.h
+include/tsduck/tsLIT.h
+include/tsduck/tsNBIT.h
+include/tsduck/tsPCAT.h
+include/tsduck/tsCAT.h
+include/tsduck/tsDSMCCStreamDescriptorsTable.h
+include/tsduck/tsPAT.h
+include/tsduck/tsPMT.h
+include/tsduck/tsTSDT.h
+include/tsduck/tsCableEmergencyAlertTable.h
+include/tsduck/tsSpliceInformationTable.h
+include/tsduck/tsSubRipGenerator.h
+include/tsduck/tsTeletext.h
+include/tsduck/tsTeletextCharset.h
+include/tsduck/tsTeletextDemux.h
+include/tsduck/tsTeletextFrame.h
+include/tsduck/tsTeletextHandlerInterface.h
+include/tsduck/tsBitRateRegulator.h
+include/tsduck/tsPCRAnalyzer.h
+include/tsduck/tsPCRMerger.h
+include/tsduck/tsPCRRegulator.h
+include/tsduck/tsPacketInsertionController.h
+include/tsduck/tsTSSpeedMetrics.h
+include/tsduck/tsTimeShiftBuffer.h
+include/tsduck/tsTS.h
+include/tsduck/tsTSDatagramOutput.h
+include/tsduck/tsTSDatagramOutputHandlerInterface.h
+include/tsduck/tsTSDumpArgs.h
+include/tsduck/tsTSFile.h
+include/tsduck/tsTSFileInputArgs.h
+include/tsduck/tsTSFileInputBuffered.h
+include/tsduck/tsTSFileOutputArgs.h
+include/tsduck/tsTSFileOutputResync.h
+include/tsduck/tsTSForkPipe.h
+include/tsduck/tsTSPacket.h
+include/tsduck/tsTSPacketFormat.h
+include/tsduck/tsTSPacketMetadata.h
+include/tsduck/tsTSPacketQueue.h
+include/tsduck/tsTSPacketStream.h
+include/tsduck/tsTSPacketWindow.h
+include/tsduck/tsTimeSource.h
+include/tsduck/tsHiDesDevice.h
+include/tsduck/tsHiDesDeviceInfo.h
+include/tsduck/tsInputSwitcher.h
+include/tsduck/tsInputSwitcherArgs.h
+include/tsduck/tsLatencyMonitor.h
+include/tsduck/tsLatencyMonitorArgs.h
+include/tsduck/tsMuxer.h
+include/tsduck/tsMuxerArgs.h
+include/tsduck/tsTSPControlCommand.h
+include/tsduck/tsTSProcessor.h
+include/tsduck/tsTSProcessorArgs.h
+include/tsduck/tsArgsWithPlugins.h
+include/tsduck/tsDuckExtensionRepository.h
+include/tsduck/tsPluginEventContext.h
+include/tsduck/tsPluginEventData.h
+include/tsduck/tsPluginEventHandlerInterface.h
+include/tsduck/tsPluginEventHandlerRegistry.h
+include/tsduck/tsPluginOptions.h
+include/tsduck/tsPluginRepository.h
+include/tsduck/tsPluginThread.h
+include/tsduck/tsTSP.h
+include/tsduck/tsAbstractDatagramInputPlugin.h
+include/tsduck/tsAbstractDescrambler.h
+include/tsduck/tsAbstractDuplicateRemapPlugin.h
+include/tsduck/tsAbstractHTTPInputPlugin.h
+include/tsduck/tsAbstractTablePlugin.h
+include/tsduck/tsDebugPlugin.h
+include/tsduck/tsDropOutputPlugin.h
+include/tsduck/tsFileInputPlugin.h
+include/tsduck/tsFileOutputPlugin.h
+include/tsduck/tsFilePacketPlugin.h
+include/tsduck/tsForkInputPlugin.h
+include/tsduck/tsForkOutputPlugin.h
+include/tsduck/tsForkPacketPlugin.h
+include/tsduck/tsHTTPInputPlugin.h
+include/tsduck/tsHTTPOutputPlugin.h
+include/tsduck/tsIPInputPlugin.h
+include/tsduck/tsIPOutputPlugin.h
+include/tsduck/tsIPPacketPlugin.h
+include/tsduck/tsInputPlugin.h
+include/tsduck/tsMemoryInputPlugin.h
+include/tsduck/tsMemoryOutputPlugin.h
+include/tsduck/tsNullInputPlugin.h
+include/tsduck/tsOutputPlugin.h
+include/tsduck/tsPSIPlugin.h
+include/tsduck/tsPlugin.h
+include/tsduck/tsSkipPlugin.h
+include/tsduck/tsProcessorPlugin.h
+include/tsduck/tsPushInputPlugin.h
+include/tsduck/tsRISTInputPlugin.h
+include/tsduck/tsRISTOutputPlugin.h
+include/tsduck/tsSRTInputPlugin.h
+include/tsduck/tsSRTOutputPlugin.h
+include/tsduck/tsTablesPlugin.h
+include/tsduck/tsTeletextPlugin.h
+include/tsduck/tshlsInputPlugin.h
+include/tsduck/tshlsOutputPlugin.h
+include/tsduck/tsVatekControl.h
+include/tsduck/tsVatekOutputPlugin.h
+include/tsduck/tsVatekUtils.h
+include/tsduck/tsduck.h
+share/tsduck/
+share/tsduck/python/
+share/tsduck/python/tsduck.py
+share/tsduck/python/ts.py
+share/tsduck/tsduck.channels.model.xml
+share/tsduck/tsduck.etuner.model.xml
+share/tsduck/tsduck.hfbands.model.xml
+share/tsduck/tsduck.hfbands.xml
+share/tsduck/tsduck.keytable.model.xml
+share/tsduck/tsduck.lnbs.model.xml
+share/tsduck/tsduck.lnbs.xml
+share/tsduck/tsduck.monitor.model.xml
+share/tsduck/tsduck.monitor.xml
+share/tsduck/tsduck.time.model.xml
+share/tsduck/tsduck.time.xml
+share/tsduck/tsduck.hides.names
+share/tsduck/tsduck.ip.names
+share/tsduck/tsduck.oui.names
+share/tsduck/tsduck.dtv.names
+share/tsduck/tsduck.dektec.names
+share/tsduck/java/
+share/tsduck/java/tsduck.jar
+share/tsduck/tsduck.tables.model.xml
+share/pkgconfig/tsduck.pc
+@bin bin/tsconfig
+@bin bin/tsanalyze
+@bin bin/tsbitrate
+@bin bin/tscharset
+@bin bin/tscmp
+@bin bin/tscrc32
+@bin bin/tsdate
+@bin bin/tsdump
+@bin bin/tsecmg
+@bin bin/tseit
+@bin bin/tsemmg
+@bin bin/tsfclean
+@bin bin/tsfixcc
+@bin bin/tsftrunc
+@bin bin/tsgenecm
+@bin bin/tslatencymonitor
+@bin bin/tslsdvb
+@bin bin/tsp
+@bin bin/tspacketize
+@bin bin/tspcap
+@bin bin/tspcontrol
+@bin bin/tspsi
+@bin bin/tsresync
+@bin bin/tsscan
+@bin bin/tsstuff
+@bin bin/tsswitch
+@bin bin/tsxml
+@bin bin/tstabcomp
+@bin bin/tstabdump
+@bin bin/tstables
+@bin bin/tsterinfo
+@bin bin/tstestecmg
+@bin bin/tsversion

@@ -1,0 +1,22 @@
+Index: meson_options.txt
+--- meson_options.txt.orig	Fri Feb  2 09:33:14 2024
++++ meson_options.txt	Fri Feb  2 09:33:46 2024
+@@ -1,13 +1,13 @@
+ option('static_analyze', type : 'boolean', value : false)
+-option('test', type : 'boolean', value : true)
++option('test', type : 'boolean', value : false)
+ #option('builtin_lz4', type: 'boolean', value: false)
+ option('builtin_cjson', type: 'boolean', value: false)
+ option('builtin_mbedtls', type: 'boolean', value: false)
+ option('built_tools', type: 'boolean', value: true)
+-option('fallback_builtin', type: 'boolean', value: true)
+-option('use_mbedtls', type: 'boolean', value: true)
+-option('use_nettle', type: 'boolean', value: false)
+-option('use_gnutls', type: 'boolean', value: false)
++option('fallback_builtin', type: 'boolean', value: false)
++option('use_mbedtls', type: 'boolean', value: false)
++option('use_nettle', type: 'boolean', value: true)
++option('use_gnutls', type: 'boolean', value: true)
+ option('have_mingw_pthreads', type: 'boolean', value: false)
+ option('allow_insecure_iv_fallback', type: 'boolean', value: false)
+ option('allow_obj_filter', type: 'boolean', value: false)
