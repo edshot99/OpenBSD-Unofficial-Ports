@@ -1,6 +1,6 @@
 COMMENT =		Alternative Discord client made in C++ with GTK
 
-VERSION =		0.1.14
+VERSION =		0.2.0
 GH_ACCOUNT =		uowuo
 GH_PROJECT =		abaddon
 GH_TAGNAME =		v${VERSION}

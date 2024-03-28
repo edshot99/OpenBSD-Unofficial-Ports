@@ -1,8 +1,6 @@
 @bin bin/abaddon
 share/abaddon/
 share/abaddon/css/
-share/abaddon/css/application-low-priority.css
-share/abaddon/css/bare.css
 share/abaddon/css/main.css
 share/abaddon/fonts/
 share/abaddon/fonts/TwitterColorEmoji.ttf
