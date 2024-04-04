@@ -1,0 +1,2 @@
+@bin bin/rcon
+@man man/man1/rcon.1
