@@ -1,0 +1,11 @@
+Index: src/server.c
+--- src/server.c.orig	Thu Apr  4 07:22:45 2024
++++ src/server.c	Thu Apr  4 08:02:39 2024
+@@ -2,6 +2,7 @@
+ 
+ #include <stdlib.h>
+ #include <string.h>
++#include <sys/socket.h>
+ 
+ #include "ssq/helper.h"
+ #include "ssq/server/private.h"

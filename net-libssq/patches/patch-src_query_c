@@ -1,0 +1,11 @@
+Index: src/query.c
+--- src/query.c.orig	Thu Apr  4 08:01:18 2024
++++ src/query.c	Thu Apr  4 08:01:33 2024
+@@ -1,6 +1,7 @@
+ #include "ssq/query.h"
+ 
+ #include <stdlib.h>
++#include <sys/socket.h>
+ 
+ #include "ssq/packet.h"
+ #include "ssq/server/private.h"
