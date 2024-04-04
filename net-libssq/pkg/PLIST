@@ -1,1 +1,17 @@
 @static-lib lib/libssq.a
+include/ssq/
+include/ssq/a2s.h
+include/ssq/a2s/
+include/ssq/a2s/info.h
+include/ssq/a2s/player.h
+include/ssq/a2s/rules.h
+include/ssq/error.h
+include/ssq/helper.h
+include/ssq/packet.h
+include/ssq/query.h
+include/ssq/response.h
+include/ssq/server.h
+include/ssq/server/
+include/ssq/server/private.h
+include/ssq/server/timeout.h
+include/ssq/stream.h
