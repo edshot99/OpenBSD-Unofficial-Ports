@@ -1,0 +1,30 @@
+Index: CMakeLists.txt
+--- CMakeLists.txt.orig	2024-06-20 10:21:12.316845829 -0500
++++ CMakeLists.txt	2024-06-20 11:39:02.496571773 -0500
+@@ -11,7 +11,7 @@ project(ssq VERSION 3.0.0)
+ 
+ include_directories(include)
+ 
+-add_library(ssq STATIC
++set(SSQ_SOURCES
+     src/a2s/info.c
+     src/a2s/player.c
+     src/a2s/rules.c
+@@ -22,3 +22,17 @@ add_library(ssq STATIC
+     src/server.c
+     src/stream.c
+ )
++
++add_library(ssq STATIC "${SSQ_SOURCES}")
++add_library(ssq-shared SHARED "${SSQ_SOURCES}")
++set_target_properties(ssq-shared PROPERTIES OUTPUT_NAME ssq)
++
++add_executable(ssq-demo example/example.c)
++target_link_libraries(ssq-demo ssq)
++set_target_properties(ssq-demo PROPERTIES OUTPUT_NAME ssq)
++
++install(TARGETS ssq ARCHIVE)
++install(TARGETS ssq-shared LIBRARY)
++install(TARGETS ssq-demo RUNTIME)
++install(DIRECTORY include/ssq TYPE INCLUDE)
++

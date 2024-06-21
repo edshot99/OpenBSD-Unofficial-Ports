@@ -1,9 +1,12 @@
 COMMENT =		up-to-date Source Server Query protocol library
 
 V =			3.0.0
+REVISION =		1
 GH_ACCOUNT =		BinaryAlien
 GH_PROJECT =		libssq
 GH_TAGNAME =		v${V}
+
+SHARED_LIBS =		ssq	0.0
 
 CATEGORIES =		net
 
@@ -24,14 +27,5 @@ MODULES =		devel/cmake
 BUILD_DEPENDS =		devel/cmake
 
 NO_TEST =		Yes
-
-do-install:
-	${INSTALL_DATA} ${WRKBUILD}/${GH_PROJECT}.a ${PREFIX}/lib/
-	${INSTALL_DATA_DIR} ${PREFIX}/include/ssq
-	${INSTALL_DATA_DIR} ${PREFIX}/include/ssq/a2s
-	${INSTALL_DATA_DIR} ${PREFIX}/include/ssq/server
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${V}/include/ssq/a2s/*.* ${PREFIX}/include/ssq/a2s/
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${V}/include/ssq/server/*.* ${PREFIX}/include/ssq/server/
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${V}/include/ssq/*.* ${PREFIX}/include/ssq/
 
 .include <bsd.port.mk>

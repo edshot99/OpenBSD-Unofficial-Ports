@@ -1,4 +1,6 @@
+@bin bin/ssq
 @static-lib lib/libssq.a
+@lib lib/libssq.so.${LIBssq_VERSION}
 include/ssq/
 include/ssq/a2s.h
 include/ssq/a2s/
