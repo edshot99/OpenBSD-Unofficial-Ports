@@ -1,5 +1,6 @@
 COMMENT =		MPEG Transport Stream Toolkit
 
+# TODO: cannot update to 3.37-3670 without patches or support for LibreSSL
 V1 =			3.36
 V2 =			3528
 PKGNAME =		tsduck-${V1}.${V2}
