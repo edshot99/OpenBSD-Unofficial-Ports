@@ -2,7 +2,7 @@ COMMENT =		cross-platform wrapper for the OS credential storage
 
 GH_ACCOUNT =		hrantzsch
 GH_PROJECT =		keychain
-GH_TAGNAME =		v1.2.1
+GH_TAGNAME =		v1.3.0
 
 CATEGORIES =		devel
 
