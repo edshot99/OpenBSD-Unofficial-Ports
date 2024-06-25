@@ -1,6 +1,7 @@
 COMMENT =		Alternative Discord client made in C++ with GTK
 
 VERSION =		0.2.1
+REVISION =		1
 GH_ACCOUNT =		uowuo
 GH_PROJECT =		abaddon
 GH_TAGNAME =		v${VERSION}
@@ -54,35 +55,15 @@ RUN_DEPENDS =		devel/spdlog \
 			x11/gtk3mm \
 			x11/libhandy
 
-CONFIGURE_ARGS =	-DABADDON_RESOURCE_DIR="${PREFIX}/share/${GH_PROJECT}"
-
 # devel/keychain requires GNOME or KDE "Secret Service" which I don't use nor want.
 CONFIGURE_ARGS +=	-DUSE_KEYCHAIN=OFF
 
 # devel/qr-code-generator has linking problem.
 CONFIGURE_ARGS +=	-DENABLE_QRCODE_LOGIN=OFF
 
+# https://github.com/uowuo/abaddon/issues/280
+CXXFLAGS =		-O3 -pipe
+
 NO_TEST =		Yes
-
-# strict flags break abaddon so disable them for now until patches are made
-CFLAGS=""
-CXXFLAGS=""
-
-do-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/bin
-	${INSTALL_DATA} ${WRKBUILD}/${GH_PROJECT} ${PREFIX}/bin/
-	chmod 755 ${PREFIX}/bin/${GH_PROJECT}
-	${INSTALL_DATA_DIR} ${PREFIX}/share/${GH_PROJECT}
-	${INSTALL_DATA_DIR} ${PREFIX}/share/${GH_PROJECT}/css
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${VERSION}/res/css/*.* ${PREFIX}/share/${GH_PROJECT}/css/
-	${INSTALL_DATA_DIR} ${PREFIX}/share/${GH_PROJECT}/fonts
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${VERSION}/res/fonts/*.conf ${PREFIX}/share/${GH_PROJECT}/fonts/
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${VERSION}/res/fonts/*.ttf ${PREFIX}/share/${GH_PROJECT}/fonts/
-	${INSTALL_DATA_DIR} ${PREFIX}/share/${GH_PROJECT}/fonts/conf.d
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${VERSION}/res/fonts/conf.d/*.* ${PREFIX}/share/${GH_PROJECT}/fonts/conf.d/
-	${INSTALL_DATA_DIR} ${PREFIX}/share/${GH_PROJECT}/res
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${VERSION}/res/res/*.* ${PREFIX}/share/${GH_PROJECT}/res/
-	${INSTALL_DATA_DIR} ${PREFIX}/share/${GH_PROJECT}/res/sound
-	${INSTALL_DATA} ${WRKDIR}/${GH_PROJECT}-${VERSION}/res/res/sound/*.* ${PREFIX}/share/${GH_PROJECT}/res/sound/
 
 .include <bsd.port.mk>
