@@ -12,9 +12,9 @@ MAINTAINER =		"Ed <ed@i2pmail.org>"
 PERMIT_PACKAGE =	Yes
 
 WANTLIB =		${COMPILER_LIBC}
-WANTLIB +=		X11 Xext Xfixes Xmu Xmuu
+WANTLIB +=		X11 Xext Xfixes Xmuu ICE SM Xpm c
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=wmsystemtray/}
+SITES =			${SITE_SOURCEFORGE:=wmsystemtray/}
 
 COMPILER =		base-clang ports-gcc base-gcc
 

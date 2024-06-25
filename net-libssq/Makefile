@@ -17,7 +17,7 @@ MAINTAINER =		"Ed <ed@i2pmail.org>"
 # MIT
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =		${COMPILER_LIBC}
+WANTLIB =		${COMPILER_LIBC} c
 
 COMPILER =		base-clang ports-gcc base-gcc
 COMPILER_LANGS =	c

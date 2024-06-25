@@ -15,9 +15,7 @@ MAINTAINER =		"Ed <ed@i2pmail.org>"
 # BSD-2
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =		${COMPILER_LIBC} nettle hogweed gmp gnutls cjson intl
-WANTLIB +=		iconv p11-kit ffi brotlienc brotlicommon brotlidec
-WANTLIB +=		zstd idn2 unistring tasn1
+WANTLIB =		${COMPILER_LIBC} c pthread nettle hogweed gmp gnutls cjson
 
 SITES =			https://code.videolan.org/rist/librist/-/archive/v${VERSION}/
 

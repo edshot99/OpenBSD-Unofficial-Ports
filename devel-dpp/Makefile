@@ -15,7 +15,7 @@ MAINTAINER =		"Ed <ed@i2pmail.org>"
 # Apache-2.0
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =		${COMPILER_LIBCXX} sodium opus
+WANTLIB =		${COMPILER_LIBCXX} sodium opus crypto m ssl z
 
 SITES =			https://github.com/brainboxdotcc/DPP/releases/download/v${V}/
 

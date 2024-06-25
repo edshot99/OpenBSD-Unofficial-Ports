@@ -13,8 +13,6 @@ MAINTAINER =		"Ed <ed@i2pmail.org>"
 # MIT
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =		${COMPILER_LIBCXX} glib-2.0 secret-1
-
 COMPILER =		base-clang ports-gcc base-gcc
 
 MODULES =		devel/cmake

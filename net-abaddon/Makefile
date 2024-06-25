@@ -18,6 +18,9 @@ PERMIT_PACKAGE =	Yes
 WANTLIB =		${COMPILER_LIBCXX} atk-1.0 atkmm-1.6 cairo gio-2.0
 WANTLIB +=		giomm-2.4 glib-2.0 glibmm-2.4 gobject-2.0 harfbuzz opus
 WANTLIB +=		rnnoise sigc-2.0 sqlite3 spdlog sodium handy-1 gdkmm-3.0
+WANTLIB +=		c cairomm-1.0 crypto fontconfig freetype gdk-3 gdk_pixbuf-2.0
+WANTLIB +=		gtk-3 gtkmm-3.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0
+WANTLIB +=		pangomm-1.4 ssl z curl
 
 COMPILER =		base-clang ports-gcc
 
@@ -51,6 +54,7 @@ LIB_DEPENDS =		audio/opus \
 			x11/libhandy
 
 RUN_DEPENDS =		devel/spdlog \
+			net/curl \
 			security/libsodium \
 			x11/gtk3mm \
 			x11/libhandy

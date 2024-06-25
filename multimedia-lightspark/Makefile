@@ -20,7 +20,8 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		${COMPILER_LIBC} ${COMPILER_LIBCXX}
 WANTLIB +=		lzma pango-1.0 SDL2 cairo GLEW jpeg avcodec swresample
-WANTLIB +=		avformat curl
+WANTLIB +=		avformat curl GL GLU X11 avutil c freetype glib-2.0
+WANTLIB +=		gobject-2.0 harfbuzz intl m pangocairo-1.0 png z
 
 COMPILER =		base-clang ports-gcc
 

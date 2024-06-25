@@ -16,8 +16,6 @@ MAINTAINER =		"Ed <ed@i2pmail.org>"
 # BSD3
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =		${COMPILER_LIBCXX} z
-
 COMPILER =		base-clang ports-gcc
 
 MODULES =		devel/cmake

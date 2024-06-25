@@ -15,7 +15,7 @@ PERMIT_PACKAGE =	Yes
 
 # uses pledge()
 
-WANTLIB =		${COMPILER_LIBC} glib-2.0 intl iconv pcre2-8
+WANTLIB =		${COMPILER_LIBC} glib-2.0 intl c
 
 COMPILER =		base-clang ports-gcc base-gcc
 COMPILER_LANGS =	c

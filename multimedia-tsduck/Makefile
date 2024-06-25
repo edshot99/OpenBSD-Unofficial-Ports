@@ -21,7 +21,7 @@ MAINTAINER =		"Ed <ed@i2pmail.org>"
 # BSD-2
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =		${COMPILER_LIBCXX} edit curl rist
+WANTLIB =		${COMPILER_LIBCXX} edit curl rist c kvm m
 
 COMPILER =		base-clang ports-gcc
 
