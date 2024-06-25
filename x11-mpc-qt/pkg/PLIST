@@ -1,0 +1,5 @@
+share/icons/hicolor/scalable/apps/mpc-qt.svg
+share/applications/mpc-qt.desktop
+share/doc/mpc-qt/
+share/doc/mpc-qt/ipc.md
+@bin bin/mpc-qt
