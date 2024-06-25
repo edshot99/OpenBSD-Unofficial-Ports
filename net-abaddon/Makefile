@@ -62,7 +62,7 @@ CONFIGURE_ARGS +=	-DUSE_KEYCHAIN=OFF
 CONFIGURE_ARGS +=	-DENABLE_QRCODE_LOGIN=OFF
 
 # https://github.com/uowuo/abaddon/issues/280
-CXXFLAGS =		-O3 -pipe
+CXXFLAGS =		-O1 -pipe
 
 NO_TEST =		Yes
 
