@@ -1,3 +1,4 @@
+BROKEN =		i am no longer providing the unofficial source tarball or maintaining. may fixup when 1.0 is released
 COMMENT =		open and free bittorrent tracker
 
 DISTNAME =		opentracker-0.1-110868ec
