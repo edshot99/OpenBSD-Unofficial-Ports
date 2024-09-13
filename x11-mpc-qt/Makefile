@@ -1,6 +1,6 @@
 COMMENT =		Media Player Classic Qute Theater
 
-V =			23.12
+V =			24.06
 GH_ACCOUNT =		mpc-qt
 GH_PROJECT =		mpc-qt
 GH_TAGNAME =		v${V}
