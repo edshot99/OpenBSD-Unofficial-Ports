@@ -1,0 +1,7 @@
+include/httplib.h
+lib/cmake/httplib/
+lib/cmake/httplib/httplibConfig.cmake
+lib/cmake/httplib/httplibConfigVersion.cmake
+lib/cmake/httplib/FindBrotli.cmake
+lib/cmake/httplib/httplibTargets.cmake
+share/doc/httplib/README.md
