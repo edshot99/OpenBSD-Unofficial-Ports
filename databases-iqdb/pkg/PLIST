@@ -1,0 +1,13 @@
+@newgroup _iqdb:898
+@newuser _iqdb:898:898:default:iqdb daemon:/var/empty:/sbin/nologin
+@rcscript ${RCDIR}/iqdb
+@bin bin/iqdb
+@mode 750
+@owner _iqdb
+@group _iqdb
+@sample ${LOCALSTATEDIR}/db/iqdb/
+@group wheel
+@sample ${LOCALSTATEDIR}/log/iqdb/
+@mode
+@owner
+@group

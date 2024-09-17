@@ -1,0 +1,15 @@
+#!/bin/ksh
+
+daemon="${TRUEPREFIX}/bin/iqdb"
+daemon_flags="127.0.0.1 5588 /var/db/iqdb/e621_v2.db"
+daemon_user=_iqdb
+
+. /etc/rc.d/rc.subr
+
+pexp="$(eval echo ${daemon} http ${daemon_flags:+ ${daemon_flags}})"
+
+rc_start() {
+	rc_exec "${daemon} http ${daemon_flags} >/var/log/iqdb/iqdb.log 2>&1 &"
+}
+
+rc_cmd $1

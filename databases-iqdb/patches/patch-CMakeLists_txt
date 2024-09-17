@@ -1,0 +1,56 @@
+Index: CMakeLists.txt
+--- CMakeLists.txt.orig	Mon Sep 16 15:48:16 2024
++++ CMakeLists.txt	Tue Sep 17 16:31:51 2024
+@@ -25,45 +25,15 @@ if(POLICY CMP0135)
+   cmake_policy(SET CMP0135 NEW)
+ endif()
+ 
+-include(FetchContent)
+-
+-FetchContent_Declare(
+-  httplib
+-  GIT_REPOSITORY https://github.com/yhirose/cpp-httplib
+-  GIT_TAG        v0.15.3
+-)
+-
+-FetchContent_Declare(
+-  json
+-  URL            https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz
+-)
+-
+-FetchContent_Declare(
+-  Catch2
+-  GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+-  GIT_TAG        v3.6.0
+-)
+-
+-FetchContent_Declare(
+-  fmt
+-  GIT_REPOSITORY https://github.com/fmtlib/fmt
+-  GIT_TAG        10.2.1
+-)
+-
+-FetchContent_Declare(
+-  sqliteOrm
+-  GIT_REPOSITORY https://github.com/fnc12/sqlite_orm
+-  GIT_TAG        v1.8.2
+-)
+-
+-FetchContent_MakeAvailable(httplib)
+-FetchContent_MakeAvailable(json)
+-FetchContent_MakeAvailable(Catch2)
+-FetchContent_MakeAvailable(fmt)
+-FetchContent_MakeAvailable(sqliteOrm)
+-
+ find_package(SQLite3 REQUIRED)
+ find_package(Threads REQUIRED)
+ find_package(PkgConfig REQUIRED)
++find_package(httplib REQUIRED)
++find_package(nlohmann_json REQUIRED)
++find_package(Catch2)
++find_package(fmt REQUIRED)
++find_package(SqliteOrm REQUIRED)
+ 
+ add_subdirectory(src)
++
++install(TARGETS iqdb RUNTIME)
