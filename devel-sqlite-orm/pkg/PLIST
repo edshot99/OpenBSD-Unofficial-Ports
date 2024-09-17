@@ -1,0 +1,6 @@
+lib/cmake/SqliteOrm/
+lib/cmake/SqliteOrm/SqliteOrmConfig.cmake
+lib/cmake/SqliteOrm/SqliteOrmConfigVersion.cmake
+lib/cmake/SqliteOrm/SqliteOrmTargets.cmake
+include/sqlite_orm/
+include/sqlite_orm/sqlite_orm.h
