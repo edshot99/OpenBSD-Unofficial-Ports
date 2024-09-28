@@ -1,0 +1,12 @@
+Index: CPP/7zip/7zip_gcc.mak
+--- CPP/7zip/7zip_gcc.mak.orig	Sun Jun 16 03:00:00 2024
++++ CPP/7zip/7zip_gcc.mak	Fri Sep 27 22:21:23 2024
+@@ -162,7 +162,7 @@ DEL_OBJ_EXE = -$(RM) $(PROGPATH) $(PROGPATH_STATIC) $(
+ # LOCAL_LIBS=-lpthread
+ # LOCAL_LIBS_DLL=$(LOCAL_LIBS) -ldl
+ LIB2 = -lpthread
+-LIB2 = -lpthread -ldl
++#LIB2 = -lpthread -ldl
+ 
+ 
+ endif
