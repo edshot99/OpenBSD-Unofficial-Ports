@@ -1,0 +1,9 @@
+@newgroup _autocompleted:899
+@newuser _autocompleted:899:899:default:autocompleted daemon:/var/empty:/sbin/nologin
+@rcscript ${RCDIR}/autocompleted
+@bin bin/autocompleted
+share/examples/autocompleted/
+share/examples/autocompleted/autocompleted.env
+@mode 600
+@sample ${SYSCONFDIR}/autocompleted.env
+@mode

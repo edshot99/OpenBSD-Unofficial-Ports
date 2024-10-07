@@ -1,0 +1,29 @@
+#!/bin/ksh
+
+daemon="${TRUEPREFIX}/bin/autocompleted"
+daemon_user=_autocompleted
+
+daemon_env_file=${SYSCONFDIR}/autocompleted.env
+daemon_env_SERVER_ADDR="$(grep SERVER_ADDR ${daemon_env_file} | cut -d',' -f2)"
+daemon_env_PG__USER="$(grep PG__USER ${daemon_env_file} | cut -d',' -f2)"
+daemon_env_PG__PASSWORD="$(grep PG__PASSWORD ${daemon_env_file} | cut -d',' -f2)"
+daemon_env_PG__HOST="$(grep PG__HOST ${daemon_env_file} | cut -d',' -f2)"
+daemon_env_PG__PORT="$(grep PG__PORT ${daemon_env_file} | cut -d',' -f2)"
+daemon_env_PG__DBNAME="$(grep PG__DBNAME ${daemon_env_file} | cut -d',' -f2)"
+daemon_env_PG__POOL__MAX_SIZE="$(grep PG__POOL__MAX_SIZE ${daemon_env_file} | cut -d',' -f2)"
+
+. /etc/rc.d/rc.subr
+
+rc_start() {
+	rc_exec "\
+		SERVER_ADDR=${daemon_env_SERVER_ADDR} \
+		PG__USER=${daemon_env_PG__USER} \
+		PG__PASSWORD=${daemon_env_PG__PASSWORD} \
+		PG__HOST=${daemon_env_PG__HOST} \
+		PG__PORT=${daemon_env_PG__PORT} \
+		PG__DBNAME=${daemon_env_PG__DBNAME} \
+		PG__POOL__MAX_SIZE=${daemon_env_PG__POOL__MAX_SIZE} \
+		${daemon} >/dev/null 2>&1 &"
+}
+
+rc_cmd $1
