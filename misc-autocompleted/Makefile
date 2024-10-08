@@ -13,6 +13,8 @@ MAINTAINER =		"Ed <ed@i2pmail.org>"
 # BSD-2
 PERMIT_PACKAGE =	Yes
 
+WANTLIB =		${MODCARGO_WANTLIB} m
+
 MODULES =		devel/cargo
 
 CONFIGURE_STYLE =	cargo
